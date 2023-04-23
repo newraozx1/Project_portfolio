@@ -1,0 +1,84 @@
+@import "../../components/navbar.scss";
+
+.contactdiv {
+  background-color: black;
+  margin-top: $navheight + 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  // background-color: ;
+
+  .contactform {
+    max-width: 458px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    padding: 50px;
+    border: solid;
+    // top: 20%;
+    // left: 20%;
+    // right: 20%;
+    // bottom: 20%;
+    label {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: white;
+      font: bolder;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    input {
+      background-color: black;
+      color: white;
+      height: 5%;
+      font-size: medium;
+
+      border: solid;
+      border-width: 1.5px;
+      &:focus {
+        outline: none;
+        border-color: lightblue;
+        border-top-width: 1.5px;
+        border-bottom-width: 1.5px;
+      }
+    }
+
+    textarea {
+      background-color: black;
+      color: white;
+      height: 15%;
+      font-size: large;
+
+      border: solid;
+      border-width: 1.5px;
+      &:focus {
+        outline: none;
+        border-color: lightblue;
+        border-top-width: 1.5px;
+        border-bottom-width: 1.5px;
+
+        transition: border 0.7s;
+      }
+    }
+    .submitbtn {
+      font-size: larger;
+      color: white;
+      border: solid;
+      background-color: transparent;
+      height: 7%;
+      margin-top: 10px;
+      // border-radius: 10px;
+      border-width: 1.5px;
+      border-color: aqua;
+
+      &:active {
+        background-color: aqua;
+        color: black;
+        opacity: 0.8;
+      }
+    }
+  }
+}

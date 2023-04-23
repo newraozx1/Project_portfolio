@@ -1,0 +1,45 @@
+$navheight: 10px;
+
+.navbar {
+  position: fixed;
+  height: 5%;
+  $navheight: height(&);
+  top: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../media/2b.gif");
+
+  .logo {
+    color: #e7c704;
+    font-weight: bolder;
+    margin-left: 20px;
+    flex: 0;
+    font-size: larger;
+
+    &:hover {
+      color: #8b0000;
+      transition: color 0.3s;
+    }
+  }
+
+  .link {
+    color: #e7c704;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 15px;
+    // border: solid;
+    padding: 5px;
+    &:hover {
+      color: #8b0000;
+      transition: color 0.3s;
+    }
+  }
+  .nekoimage {
+    align-self: flex-start;
+    height: 100%;
+  }
+}

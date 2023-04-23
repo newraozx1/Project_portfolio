@@ -1,0 +1,125 @@
+@import "../../components/navbar.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900;1000&family=Spectral:wght@200&display=swap");
+
+.portfolio {
+  margin-top: $navheight + 24;
+  height: 100vh;
+  align-content: stretch;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+
+  .form {
+    min-height: 100vh;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background-color: #1a1a1a;
+    align-items: center;
+    color: white;
+    .namerow {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .name {
+        color: #d4af37;
+        font-size: 70px;
+        word-spacing: 4px;
+      }
+    }
+
+    .skillrow {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      .skillheading {
+        color: #03c988;
+      }
+
+      ul {
+        line-height: 2;
+        list-style-type: square;
+      }
+    }
+  }
+
+  .btn {
+    color: red;
+    border: none;
+    background-color: white;
+    align-self: flex-end;
+    height: fit-content;
+    padding: 20px;
+  }
+  .projects {
+    // .divider {
+    //   border: none;
+    //   width: 100%;
+
+    // }
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: black;
+    align-items: center;
+
+    .projectHeading {
+      color: #2a9d8f;
+      height: auto;
+      margin: 0;
+      font-size: 56px;
+      border-bottom: 2px;
+      border: solid;
+      border-top: 1px;
+      border-left: 1px;
+      border-right: 1px;
+      padding-bottom: 10px;
+    }
+
+    .projectinfo {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .projectnames {
+        padding: 5px;
+        border: dotted;
+        color: #663399;
+        font-size: large;
+      }
+      .discription {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin-top: 0;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+      }
+    }
+  }
+  // .displaybtn {
+  //   position: absolute;
+  //   height: 100px;
+  //   background-color: black;
+  // }
+  .togglebutton {
+    right: -10%;
+    top: 70%;
+    height: 5%;
+    border: none;
+    width: 30%;
+    border-radius: 2px;
+    // background-color: #000000;
+    position: absolute;
+    transform: rotate(-90deg);
+    font-weight: bolder;
+    color: azure;
+    // background: rgb(2, 0, 36);
+    background-image: url("../../media/H2.gif");
+  }
+}
