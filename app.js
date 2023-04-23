@@ -12,6 +12,8 @@ app.use(cors());
 
 app.use(contactrouter);
 
-mongoose.connect();
+mongoose.connect(
+  "mongodb+srv://breez:breezadmin@portfoliodata.uyylb11.mongodb.net/?retryWrites=true&w=majority"
+);
 
 app.listen(process.env.PORT, () => console.log("server started"));

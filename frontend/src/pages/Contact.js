@@ -7,18 +7,26 @@ const Contact = () => {
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
 
+  const fieldclear = () => {
+    setmessage("");
+    setname("");
+    setemail("");
+  };
+
   const handlesubmit = async (event) => {
+    const inname = name;
+    const inemail = email;
+    const inmessage = message;
+    fieldclear();
     event.preventDefault();
     try {
       await axios.post("http://localhost:3001/register", {
-        name: name,
-        email: email,
-        message: message,
+        name: inname,
+        email: inemail,
+        message: inmessage,
       });
+
       alert("message stored");
-      setmessage("");
-      setname("");
-      setemail("");
     } catch (err) {
       console.log(err);
     }
@@ -53,7 +61,7 @@ const Contact = () => {
           required
           value={message}
         ></textarea>
-        <button type="submit" className="submitbtn">
+        <button type="submit" onclick={handlesubmit} className="submitbtn">
           SUBMIT
         </button>
       </form>
